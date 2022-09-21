@@ -10,7 +10,7 @@ for i in range(len(budget['transactions'])):
         day = date[2]
         if (day >= "27" and day <= "31"):
             newMonth = int(month) + 1
-            newDate = "2022-"+str(newMonth)+"-01"
+            newDate = "2022-0"+str(newMonth)+"-01"
             memo = ""
             if ('memo' in budget['transactions'][i]):
                 memo = budget['transactions'][i]['memo']
